@@ -1,57 +1,133 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: white;
-    height: 100%;
+  background-color: white;
+  height: 100%;
+}
+
+.inner-body {
+  margin-bottom: 100px;
 }
 
 .background-blue {
-    background-color: blueviolet;
-    height: 300px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: blueviolet;
+  height: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background-blue h1 {
+  margin-top: 50px;
+  color: white;
 }
 
 .background-blue p {
-    width: 50%;
+  width: 50%;
+  color: white;
 }
 
 .card-container {
-    /* background-color: red; */
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    top: 220px;
-    width: 100%;
+  /* background-color: red; */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 220px;
+  width: 100%;
 }
 
 .inner-card {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
 .inner-card .card-body {
-    border: 1px solid black;
-    width: 220px;
-    height: 300px;
-    background-color: white;
+  width: 220px;
+  height: 300px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.inner-card .card-body:hover {
+    transform: scale(1.2);
 }
 
 .inner-card .card-body .header {
-    background-color: darkslategray;
-    width: 100%;
-    padding: 5px 0px;
+  background-color: darkslategray;
+  width: 100%;
+  padding: 5px 0px;
 }
 
 .inner-card .card-body .header h1 {
-    color: white;
-    padding: 0px 10px;
+  color: white;
+  padding: 0px 10px;
+}
+
+.inner-card .card-body .body .price {
+  display: flex;
+  justify-content: center;
+}
+
+.inner-card .card-body .body .price .dollar {
+  position: absolute;
+  top: 60px;
+  margin-right: 50px;
+}
+.inner-card .card-body .body .price .month {
+  position: absolute;
+  top: 110px;
+  margin-left: 90px;
+}
+
+.card-footer {
+  font-size: 8px;
+  padding: 10px 20px;
+}
+
+.card-footer .info h1 {
+  font-weight: 900;
+}
+
+.card-footer .info span {
+  font-weight: 100;
+}
+
+.card-footer .button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.card-footer .button-group button {
+  padding: 5px 20px;
+  background-color: lightseagreen;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  color: white;
+}
+
+.inner-body .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 250px;
+  gap: 40px;
+}
+
+.inner-body .footer .info {
+  display: flex;
+  gap: 55px;
+}
+
+.inner-body .footer .info p {
+  width: 350px;
 }
